@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vinh-Statistic.com</title>
+  <script>
+    window.alert("Welcome to the Vinh-statistic website ♥! I coded by MYSELF to build this website because I had self-learned many Javascript, HTML, and CSS. And if you want to search statistics videos, you can type and click the search button. I collect many videos to help students self-learning statistics. Thanks for visiting my website!");
+  </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/video.css">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<!--This is Javascript classifying the title video depending on typing-->
+<script>
+  function searchVideos() {
+    const searchBar = document.getElementById('searchBar');
+    const searchQuery = searchBar.value.toLowerCase();
+    const videos = document.querySelectorAll('.video-preview');
+
+    videos.forEach(video => {
+      const title = video.getAttribute('data-title').toLowerCase();
+      if (title.includes(searchQuery)) {
+        video.classList.remove('hidden');
+      } else {
+        video.classList.add('hidden');
+      }
+    });
+  }
+</script>
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+</head>
+<body>
+   <div class="header">
+    <div class="left-section"> <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+    <img class="youtube-logo" src="icons/statistic-logo.png"></div>
+    <div class="middle-section"> 
+      <input id="searchBar" class="search-bar" type="text" placeholder="Type the entire video title, press the search button">
+      <button class="search-button" onclick="searchVideos()">
+        <img class="search-icon" src="icons/search.svg">
+        <div class="tooltip"> Search</div>
+      </button>
+      <!--How to create a tooltil: put position absolute inside position relative-->
+    <button class="voice-search-button">
+      <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+      <div class="tooltip">Search with your voice</div>
+    </button></div>
+    <div class="right-section">
+      
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+      <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notifications-count">3</div>
+      </div>
+      
+      <img class="current-user-picture" src="icons/unnamed.jpg">
+    </div>
+   
+   </div>
+   <div class="sidebar">
+    <div class="sidebar-link"><img src="icons/home.svg"><div>Home</div></div>
+    <div class="sidebar-link"><img src="icons/explore.svg"><div>Explore</div></div>
+    <div class="sidebar-link"><img src="icons/subscriptions.svg"><div>Subscriptions</div></div>
+    <div class="sidebar-link"><img src="icons/originals.svg"><div>Originals</div></div>
+    <div class="sidebar-link"><img src="icons/youtube-music.svg"><div>Youtube Music</div></div>
+    <div class="sidebar-link"><img src="icons/library.svg"><div>Library</div></div>
+   </div>
+  
+  
+  <div class="video-grid">
+    <div class="video-preview" data-title="Lecture 1: Probability and Counting | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=Q-pCzTpwPBU&t=5s"><img class="thumbnail" src="thumbnails/thumbnail-1.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">46:29</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=Q-pCzTpwPBU&t=5s">Lecture 1: Probability and Counting | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+         
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          1.3M views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 2: Story Proofs, Axioms of Probability | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=FJd_1H3rZGg&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=2&t=67s"><img class="thumbnail" src="thumbnails/thumbnail-2.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">45:40</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=FJd_1H3rZGg&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=2&t=67s">Lecture 2: Story Proofs, Axioms of Probability | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          344K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    
+    <div class="video-preview" data-title="Lecture 3: Birthday Problem, Properties of Probability | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=LZ5Wergp_PA&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=3"><img class="thumbnail" src="thumbnails/thumbnail-3.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">48:55</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=LZ5Wergp_PA&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=3">Lecture 3: Birthday Problem, Properties of Probability | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          259K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 4: Conditional Probability">
+      <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=P7NE4WF8j-Q&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=4"><img class="thumbnail" src="thumbnails/thumbnail-4.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">49:45</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=P7NE4WF8j-Q&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=4">Lecture 4: Conditional Probability</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          219K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 5: Conditioning Continued, Law of Total Probability | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=JzDvVgNDxo8&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=5"><img class="thumbnail" src="thumbnails/thumbnail-5.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">50:02</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=JzDvVgNDxo8&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=5">Lecture 5: Conditioning Continued, Law of Total Probability | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          161K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 6: Monty Hall, Simpson's Paradox | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=fDcjhAKuhqQ&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=6"><img class="thumbnail" src="thumbnails/thumbnail-6.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">49:01</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=fDcjhAKuhqQ&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=6">Lecture 6: Monty Hall, Simpson's Paradox | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          152K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 7: Gambler's Ruin and Random Variables | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=PNrqCdslGi4&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=7"><img class="thumbnail" src="thumbnails/thumbnail-7.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">51:45</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=PNrqCdslGi4&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=7">Lecture 7: Gambler's Ruin and Random Variables | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          189K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 8: Random Variables and Their Distributions | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=k2BB0p8byGA&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=8"><img class="thumbnail" src="thumbnails/thumbnail-8.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">50:23</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=k2BB0p8byGA&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=8">Lecture 8: Random Variables and Their Distributions | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          199K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 9: Expectation, Indicator Random Variables, Linearity | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=LX2q356N2rU&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=9"><img class="thumbnail" src="thumbnails/thumbnail-9.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">50:22</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=LX2q356N2rU&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=9">Lecture 9: Expectation, Indicator Random Variables, Linearity | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          160K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 10: Expectation Continued | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=P1fSFvhPf7Q&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=10"><img class="thumbnail" src="thumbnails/thumnail-10.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">50:09</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=P1fSFvhPf7Q&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=10">Lecture 10: Expectation Continued | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          104K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 11: The Poisson distribution | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=TD1N4hxqMzY&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=11"><img class="thumbnail" src="thumbnails/thumnail-11.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">42:45</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=TD1N4hxqMzY&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=11">Lecture 11: The Poisson distribution | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          171K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 12: Discrete vs. Continuous, the Uniform | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=Tci---bVs60&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=12"><img class="thumbnail" src="thumbnails/thumnail-12.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">49:55</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=Tci---bVs60&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=12">Lecture 12: Discrete vs. Continuous, the Uniform | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          109K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 13: Normal distribution | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=72QjzHnYvL0&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=13"><img class="thumbnail" src="thumbnails/thumnail-13.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">51:10</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=72QjzHnYvL0&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=13">Lecture 13: Normal distribution | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          120K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 14: Location, Scale, and LOTUS | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=9vp1Ll2NpRw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=14"><img class="thumbnail" src="thumbnails/thumnail-14.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">48:55</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=9vp1Ll2NpRw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=14">Lecture 14: Location, Scale, and LOTUS | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          77K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 15: Midterm Review | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=yFRZf81sB5k&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=15"><img class="thumbnail" src="thumbnails/thumnail-15.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">38:12</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=yFRZf81sB5k&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=15">Lecture 15: Midterm Review | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          62K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 16: Exponential Distribution | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=bM6nFDjvEns&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=16"><img class="thumbnail" src="thumbnails/thumnail-16.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">18:19</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=bM6nFDjvEns&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=16">Lecture 16: Exponential Distribution | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          116K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 17: Moment Generating Functions | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=N8O6zd6vTZ8&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=17"><img class="thumbnail" src="thumbnails/thumnail-17.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">50:45</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=N8O6zd6vTZ8&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=17">Lecture 17: Moment Generating Functions | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          162K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 18: MGFs Continued | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=tVDdx6xUOcs&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=18"><img class="thumbnail" src="thumbnails/thumnail-18.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">49:41</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=tVDdx6xUOcs&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=18">Lecture 18: MGFs Continued | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          79K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 19: Joint, Conditional, and Marginal Distributions | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=J70dP_AECzQ&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=19"><img class="thumbnail" src="thumbnails/thumnail-19.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">50:09</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=J70dP_AECzQ&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=19">Lecture 19: Joint, Conditional, and Marginal Distributions | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          266K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 20: Multinomial and Cauchy | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=xiVWNkQUqKk&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=20"><img class="thumbnail" src="thumbnails/thumnail-20.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">49:00</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=xiVWNkQUqKk&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=20">Lecture 20: Multinomial and Cauchy | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          67K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 21: Covariance and Correlation | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=IujCYxtpszU&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=21"><img class="thumbnail" src="thumbnails/thumnail-21.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">49:26</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=IujCYxtpszU&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=21">Lecture 21: Covariance and Correlation | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          119K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 22: Transformations and Convolutions | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=yXwPUAIvFyg&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=22"><img class="thumbnail" src="thumbnails/thumnail-22.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">47:46</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=yXwPUAIvFyg&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=22">Lecture 22: Transformations and Convolutions | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          81K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 23: Beta distribution | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=UZjlBQbV1KU&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=23"><img class="thumbnail" src="thumbnails/thumnail-23.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">49:48</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=UZjlBQbV1KU&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=23">Lecture 23: Beta distribution | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          96K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 24: Gamma distribution and Poisson process | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=Qjeswpm0cWY&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=24"><img class="thumbnail" src="thumbnails/thumnail-24.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">46:28</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=Qjeswpm0cWY&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=24">Lecture 24: Gamma distribution and Poisson process | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          19M views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 25: Order Statistics and Conditional Expectation | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=2LR5JYbhyjg&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=25"><img class="thumbnail" src="thumbnails/thumnail-25.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">48:49</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=2LR5JYbhyjg&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=25">Lecture 25: Order Statistics and Conditional Expectation | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          143K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 26: Conditional Expectation Continued | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=PgawcWisb0I&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=26"><img class="thumbnail" src="thumbnails/thumnail-26.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">48:15</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title" href="https://www.youtube.com/watch?v=PgawcWisb0I&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=26">Lecture 26: Conditional Expectation Continued | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          90K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 27: Conditional Expectation given an R.V. | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=gjBvCiRt8QA&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=27"><img class="thumbnail" src="thumbnails/thumnail-27.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">50:34</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=gjBvCiRt8QA&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=27">Lecture 27: Conditional Expectation given an R.V. | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          72K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 28: Inequalities | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=UtXK_EQ3Pow&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=28"><img class="thumbnail" src="thumbnails/thumnail-28.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">47:29</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=UtXK_EQ3Pow&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=28">Lecture 28: Inequalities | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          57K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 29: Law of Large Numbers and Central Limit Theorem | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=OprNqnHsVIA&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=29"><img class="thumbnail" src="thumbnails/thumnail-29.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">49:48</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=OprNqnHsVIA&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=29">Lecture 29: Law of Large Numbers and Central Limit Theorem | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          156K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 30: Chi-Square, Student-t, Multivariate Normal | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=MF-XSJOsGqw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=30"><img class="thumbnail" src="thumbnails/thumnail-30.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">47:27</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=MF-XSJOsGqw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=30">Lecture 30: Chi-Square, Student-t, Multivariate Normal | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          91K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 31: Markov Chains | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=8AJPs3gvNlY&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=31"><img class="thumbnail" src="thumbnails/thumnail-31.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">46:38</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=8AJPs3gvNlY&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=31">Lecture 31: Markov Chains | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          158K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 32: Markov Chains Continued | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=aBGOyZv2pZE&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=32"><img class="thumbnail" src="thumbnails/thumnail-32.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">48:24</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=aBGOyZv2pZE&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=32">Lecture 32: Markov Chains Continued | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          68K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 33: Markov Chains Continued Further | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=Q-pCzTpwPBU&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=33"><img class="thumbnail" src="thumbnails/thumnail-33.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">47:00</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=Q-pCzTpwPBU&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=33">Lecture 33: Markov Chains Continued Further | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          49K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Lecture 34: A Look Ahead | Statistics 110">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=ChS3K2O-h7o&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=34"><img class="thumbnail" src="thumbnails/thumnail-34.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">36:59</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=ChS3K2O-h7o&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=34">Lecture 34: A Look Ahead | Statistics 110</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          37K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    <div class="video-preview" data-title="Joseph Blitzstein: "The Soul of Statistics" | Harvard Thinks Big 4">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=dzFf3r1yph8&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=35"><img class="thumbnail" src="thumbnails/thumnail-35.webp"></a>
+        <!--This is link to video-->
+        <div class="video-time">14:47</div>
+      </div>
+      <div class="video-info-grid">
+       <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></div>
+       <div class="video-info">
+        <p class="video-title">
+          <a class="video-link" href="https://www.youtube.com/watch?v=dzFf3r1yph8&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=35">Joseph Blitzstein: "The Soul of Statistics" | Harvard Thinks Big 4</a>
+          <!--Làm tương tự với những cái còn lại nhớ link với video link-->
+        </p>
+        <p class="video-author">
+          Joe Blitzstein
+        </p>
+        <p class="video-stats">
+          162K views &#183; 11 years ago
+        </p>
+        
+       </div>
+        
+        
+        
+    
+      </div>
+      
+    
+    </div>
+    
+  
+    
+  
+  </div>
+  <br>
+  <br>
+  <div style="display:flex; flex-direction:row;">
+    <div style="display:flex; flex-direction: column; margin-right: 100px;">
+      <div>Email to me for ask about statistic</div>
+      <div>
+      <button ><a href="mailto:thanhvinhlcci2005@gmail.com"><img class="email-image" src="icons/send-email.webp"></a></button>
+      </div>
+    </div>
+    
+    <div>
+      <div id="container">
+        <p id="demo">Name:Nguyen Duc Thanh Vinh-ID:23229582</p>
+    </div>
+    <button onclick="toggleContent()">Click here to see me</button>
+    <button onclick="showStudentID()">Click here to see My student ID</button>
+
+    <script>
+        let currentState = 'name'; // tracks the current state
+
+        function toggleContent() {
+            const container = document.getElementById('container');
+            const currentElement = container.firstElementChild;
+
+            if (currentState === 'name') {
+                const img = document.createElement('img');
+                img.src = 'icons/Vinh.jpg';
+                img.alt = 'Nguyen Duc Thanh Vinh';
+                img.id = 'demo';
+                container.replaceChild(img, currentElement);
+                currentState = 'image';
+            } else if (currentState === 'image') {
+                const paragraph = document.createElement('p');
+                paragraph.id = 'demo';
+                paragraph.textContent = 'My name is Nguyen Duc Thanh Vinh';
+                container.replaceChild(paragraph, currentElement);
+                currentState = 'name';
+            } else if (currentState === 'studentID') {
+                const img = document.createElement('img');
+                img.src = 'icons/Vinh.jpg';
+                img.alt = 'Nguyen Duc Thanh Vinh';
+                img.id = 'demo';
+                container.replaceChild(img, currentElement);
+                currentState = 'image';
+            }
+        }
+
+        function showStudentID() {
+            const container = document.getElementById('container');
+            const currentElement = container.firstElementChild;
+
+            if (currentState === 'name' || currentState === 'image') {
+                const paragraph = document.createElement('p');
+                paragraph.id = 'demo';
+                paragraph.textContent = 'My student id: 23229582';
+                container.replaceChild(paragraph, currentElement);
+                currentState = 'studentID';
+            } else if (currentState === 'studentID') {
+                const paragraph = document.createElement('p');
+                paragraph.id = 'demo';
+                paragraph.textContent = 'My name is Nguyen Duc Thanh Vinh';
+                container.replaceChild(paragraph, currentElement);
+                currentState = 'name';
+            }
+        }
+    </script>
+    </div>
+
+  <div style="margin-left: 300px;">
+    <a> ID:23229582 Name: Nguyen Duc Thanh Vinh</a>
+
+  </div>
+    
+      
+
+
+  
+      
+  </div>
+
+ 
+    
+  
+  
+
+  
+
+
+  
+
+
+</body>
+</html>
